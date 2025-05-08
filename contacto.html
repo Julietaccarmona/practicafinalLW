@@ -23,19 +23,19 @@
         <p>
           <!-- Nombre -->
           <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required minlength="3" />
+          <input type="text" placeholder="John Doe" id="nombre" name="nombre" required minlength="3" />
         </p>
 
         <p>
           <!-- Email -->
           <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" placeholder="john@doe.com" id="email" name="email" required />
         </p>
 
         <p>
           <!-- Telefono -->
-          <label for="edad">Número de teléfono:</label>
-          <input type="number" id="telefono" name="telefono" min="8" />
+          <label for="telefono">Número de teléfono:</label>
+          <input type="number" placeholder="+54229222222" id="telefono" name="telefono" min="8" />
         </p>
 
         <!-- Opciones con radio buttons -->
@@ -49,7 +49,7 @@
         <input type="radio" id="web" name="web" value="web" />
         <label for="web">Desarrollo Web</label><br /><br />
         <p>Dejá tu mensaje aquí:</p>
-        <textarea></textarea>
+        <textarea maxlength="200" placeholder="Hola Julieta, te contacto porque "></textarea>
 
         <!-- Botón de envío -->
         <button type="submit">Enviar</button>
