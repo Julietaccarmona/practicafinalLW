@@ -20,6 +20,8 @@
   <body>
       <form>
         <h3>Formulario de Contacto</h3>
+        <fieldset>
+          <legend>Datos personales</legend>
         <p>
           <!-- Nombre -->
           <label for="nombre">Nombre:</label>
@@ -37,20 +39,51 @@
           <label for="telefono">Número de teléfono:</label>
           <input type="number" placeholder="+54229222222" id="telefono" name="telefono" min="8" />
         </p>
+        </fieldset>
 
-        <!-- Opciones con radio buttons -->
-        <p>¿En qué puedo ayudarte?</p>
-        <input type="radio" id="rrii" name="rrii" value="rrii" />
-        <label for="rrii">Relaciones Internacionales</label><br />
+        <fieldset>
+          <legend>Trabajemos juntos!</legend>
 
-        <input type="radio" id="teacher" name="teacher" value="teacher" />
-        <label for="teacher">English Teacher</label><br />
+          <!-- Opciones con radio buttons -->
+          <p>¿En qué puedo ayudarte?</p>
+          <input type="radio" id="rrii" name="rrii" value="rrii" />
+          <label for="rrii">Relaciones Internacionales</label><br />
 
-        <input type="radio" id="web" name="web" value="web" />
-        <label for="web">Desarrollo Web</label><br /><br />
-        <p>Dejá tu mensaje aquí:</p>
-        <textarea maxlength="200" placeholder="Hola Julieta, te contacto porque "></textarea>
+          <input type="radio" id="teacher" name="teacher" value="teacher" />
+          <label for="teacher">English Teacher</label><br />
 
+          <input type="radio" id="web" name="web" value="web" />
+          <label for="web">Desarrollo Web</label><br /><br />
+
+          <!-- Select y option-->
+          <label>¿Quién eres?
+            <select name="tipo_usuario" id="tipo_usuario">
+              <option value="empresa">Empresa</option>
+              <option value="autonomo">Autónomo/Freelancer</option>
+              <option value="alumno">Alumno</option>
+              <option value="docente">Docente/Investigador</option>
+              <option value="otro">Otro</option>
+            </select>
+          </label>
+
+          <!-- DATALIST -->
+          <div class="datalist">
+            <label for="referidos">¿Dónde me has encontrado?  
+            <input list="referidos" name="referidos"/>
+            <datalist id="referidos" name="referidos">
+              <option value= "LinkedIn"></option>
+              <option value="Upwork"></option>
+              <option value="Instagram"></option>
+              <option value="Facebook"></option>
+              <option value="Me refirió alguien"> </option>
+            </datalist>
+            </label>
+          </div>
+
+          <!--Textarea-->
+          <p>Dejá tu mensaje aquí:</p>
+          <textarea maxlength="200" placeholder="Hola Julieta, te contacto porque "></textarea>
+        </fieldset>
         <!-- Botón de envío -->
         <button type="submit">Enviar</button>
       </form>
