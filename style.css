@@ -79,6 +79,34 @@ summary {
   text-align: left;
 }
 
+table {
+  width: 100%;
+  padding: 1%;
+  margin: 20px auto;
+}
+
+thead {
+  background-color: #f8a;
+}
+
+th,
+td {
+  padding: 10px;
+  border: solid 1px #797979;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  text-align: left;
+}
+
+tfoot {
+  text-align: center;
+}
+
 footer {
   bottom: 0;
   width: 100%;

@@ -9,85 +9,127 @@
     <nav>
       <ul>
         <li><a href="index.html"> Inicio </a></li>
-        <li><a href="tarjeta.html" target="_blank"> Tarjeta personal </a></li>
+        <li>
+          <a href="tarjeta.html" target="_blank" rel="noopener">
+            Tarjeta personal
+          </a>
+        </li>
         <li><a href="contacto.html"> Contactame </a></li>
-        <li><a href="cv.html" target="_blank"> CV extendido</a></li>
-        <li><a href="redes.html" target="_blank"> Redes Sociales</a></li>
+        <li>
+          <a href="cv.html" target="_blank" rel="noopener"> CV extendido</a>
+        </li>
+        <li>
+          <a href="redes.html" target="_blank" rel="noopener">
+            Redes Sociales</a
+          >
+        </li>
       </ul>
     </nav>
   </header>
 
   <body>
-      <form>
-        <h4>Formulario de Contacto</h4>
-        <fieldset>
-          <legend>Datos personales</legend>
+    <form>
+      <h4>Formulario de Contacto</h4>
+      <fieldset>
+        <legend>Datos personales</legend>
         <p>
           <!-- Nombre -->
           <label for="nombre">Nombre:</label>
-          <input type="text" placeholder="John Doe" id="nombre" name="nombre" required minlength="3" />
+          <input
+            type="text"
+            placeholder="John Doe"
+            id="nombre"
+            name="nombre"
+            required
+            minlength="3"
+          />
         </p>
 
         <p>
           <!-- Email -->
           <label for="email">Correo electrónico:</label>
-          <input type="email" placeholder="john@doe.com" id="email" name="email" required />
+          <input
+            type="email"
+            placeholder="john@doe.com"
+            id="email"
+            name="email"
+            required
+          />
         </p>
 
         <p>
           <!-- Telefono -->
           <label for="telefono">Número de teléfono:</label>
-          <input type="number" placeholder="+54229222222" id="telefono" name="telefono" min="8" />
+          <input
+            type="number"
+            placeholder="+54229222222"
+            id="telefono"
+            name="telefono"
+            min="8"
+          />
         </p>
-        </fieldset>
+      </fieldset>
 
-        <fieldset>
-          <legend>Trabajemos juntos!</legend>
+      <fieldset>
+        <legend>Trabajemos juntos!</legend>
 
-          <!-- Opciones con radio buttons -->
-          <p>¿En qué puedo ayudarte?</p>
-          <input type="radio" id="rrii" name="rrii" value="rrii" />
-          <label for="rrii">Relaciones Internacionales</label><br />
+        <!-- Opciones con radio buttons -->
+        <p>¿En qué puedo ayudarte?</p>
+        <input type="radio" id="rrii" name="rrii" value="rrii" />
+        <label for="rrii">Relaciones Internacionales</label><br />
 
-          <input type="radio" id="teacher" name="teacher" value="teacher" />
-          <label for="teacher">English Teacher</label><br />
+        <input type="radio" id="teacher" name="teacher" value="teacher" />
+        <label for="teacher">English Teacher</label><br />
 
-          <input type="radio" id="web" name="web" value="web" />
-          <label for="web">Desarrollo Web</label><br /><br />
+        <input type="radio" id="web" name="web" value="web" />
+        <label for="web">Desarrollo Web</label><br /><br />
 
-          <!-- Select y option-->
-          <label>¿Quién eres?
-            <select name="tipo_usuario" id="tipo_usuario">
-              <option value="empresa">Empresa</option>
-              <option value="autonomo">Autónomo/Freelancer</option>
-              <option value="alumno">Alumno</option>
-              <option value="docente">Docente/Investigador</option>
-              <option value="otro">Otro</option>
-            </select>
-          </label>
+        <!-- Select y option-->
+        <label
+          >¿Quién eres?
+          <select name="tipo_usuario" id="tipo_usuario">
+            <option value="empresa">Empresa</option>
+            <option value="autonomo">Autónomo/Freelancer</option>
+            <option value="alumno">Alumno</option>
+            <option value="docente">Docente/Investigador</option>
+            <option value="otro">Otro</option>
+          </select>
+        </label>
 
-          <!-- DATALIST -->
-          <div class="datalist">
-            <label for="referidos">¿Dónde me has encontrado?  
-            <input list="referidos" name="referidos"/>
+        <!-- DATALIST -->
+        <div class="datalist">
+          <label for="referidos"
+            >¿Dónde me has encontrado?
+            <input list="referidos" name="referidos" />
             <datalist id="referidos" name="referidos">
-              <option value= "LinkedIn"></option>
+              <option value="LinkedIn"></option>
               <option value="Upwork"></option>
               <option value="Instagram"></option>
               <option value="Facebook"></option>
-              <option value="Me refirió alguien"> </option>
+              <option value="Me refirió alguien"></option>
             </datalist>
-            </label>
-          </div>
+          </label>
+        </div>
 
-          <!--Textarea-->
-          <p>Dejá tu mensaje aquí:</p>
-          <textarea maxlength="200" placeholder="Hola Julieta, te contacto porque "></textarea>
-        </fieldset>
-        <!-- Botón de envío -->
-        <button type="submit">Enviar</button>
-      </form>
-    </h3>
+        <!--Textarea-->
+        <p>Dejá tu mensaje aquí:</p>
+        <textarea
+          maxlength="200"
+          placeholder="Hola Julieta, te contacto porque "
+        ></textarea>
+      </fieldset>
+      <!--Términos y condiciones-->
+      <label>Acepto los <a href="terms.html">términos y condiciones</a></label>
+      <input
+        type="checkbox"
+        id="terminos"
+        name="terminos"
+        value="acepto"
+        required
+      />
+      <!-- Botón de envío -->
+      <button type="submit">Enviar</button>
+    </form>
   </body>
 
   <footer>© 2025 julietaccarmona – Todos los derechos reservados</footer>
