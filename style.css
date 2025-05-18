@@ -257,10 +257,15 @@ button {
 }
 
 .redes__upwork {
-  background-color: #6fda44;
+  background-color: #2b2b2b;
   color: #1f1f1f; /* gris oscuro para buen contraste */
   z-index: 1;
   top: 20px;
+}
+
+.redes__facebook {
+  background-color: #000a96;
+  color: #1f1f1f; /* gris oscuro para buen contraste */
 }
 
 /* Hover para todas */
@@ -270,4 +275,3 @@ button {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 /* fin redes */
-
