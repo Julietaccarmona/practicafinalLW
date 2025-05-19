@@ -2,9 +2,11 @@ body {
   background: white;
   font-family: sans-serif;
   color: white;
+  box-sizing: border-box;
 }
 
 nav {
+  box-sizing: border-box;
   position: fixed; /* 🔒 Fija en la parte superior */
   top: 0; /* Pegada arriba */
   width: 100%; /* Todo el ancho de la pantalla */
@@ -44,6 +46,7 @@ nav li a:hover {
 }
 
 .card {
+  box-sizing: border-box;
   background: linear-gradient(transparent, rgb(253, 133, 227));
   text-align: justify;
   width: 500px;
